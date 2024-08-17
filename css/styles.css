@@ -1,0 +1,217 @@
+/*---------
+fuentes
+----*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/*--------- global
+--------*/
+:root{
+    --font:#E5E5E5;
+    --white: #ffffff;
+    --blue:#3389eb;
+    --mediumgrey:#7D7F7C;
+    --RGBA:(0,0,0,08);
+    --brown:#A52A2A;
+    --Darksalmon:#E9967A;
+     --chocolate: chocolate;
+     --navy: #000080;
+     --gray: #808080;
+     --blak: #000000;
+
+
+
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif; 
+    text-decoration: none;
+    background: var(--white);
+    
+}
+::selection{ 
+    background: var(--blue);
+    color: white;
+   
+}
+body{
+    height: 100%;
+}
+img{
+    max-width: 100%;
+}
+/*-----encabezado*/
+header{
+    position: absolute;
+    margin: 40px  0px 0px 40px;
+}
+header .logo{
+    display: flex;
+    align-items: flex-start;
+    width: 160px;
+    height: 70px;
+   
+}
+ /* --princcipal---*/
+ main{
+    display:flex;
+    flex-direction: row;
+    background: url(../imagenes/fondo.png)no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.encriptador{
+    width: 60%;
+    margin: 160px 0px 0px 140px;
+    background:transparente;
+    
+}
+.encriptar{
+    width: 660px;
+    height: 280px;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 48px;
+    outline: none;
+    border: 1px solid var(--blue);
+    border-radius: 15px;
+    resize: none;
+
+}
+.encriptar::placeholder,:focus{
+    color: var(--brown);
+}
+.encriptador-aviso{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 8px;
+    position: absolute;
+    top: 500px;
+}
+.texto-aviso{
+    width: 100%;
+    font-size: 1.125rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 150%;
+    opacity: 0.6;
+     color: var(--chocolate);
+}
+.encriptador-contenedor{
+    display: flex;
+    position: absolute;
+    flex-direction:row ;
+    align-items: flex-start;
+    gap: 8px;
+    top: 526px;
+
+}
+.btn-encriptar{
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    font-style:normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 19px;
+    text-align: center;
+    color: var(--white);
+    background: var(--brown);
+    border: 1px solid var(--brown);
+    border-radius: 24px;
+    cursor: pointer;
+    box-shadow: opx 20px 30px -6px var(--RGBA);
+
+}
+.btn-encriptar:active{
+    box-shadow: inset 2px 2px 4px var(--font),
+    inset -3px -5px 9px var(--brown);
+    color: var(--Darksalmon);
+}
+.btn-desencriptar{
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    font-style:normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 19px;
+    text-align: center;
+    color: var(--white);
+    background: var(--blue);
+    border: 1px solid var(--blue);
+    border-radius: 24px;
+    cursor: pointer;
+    box-shadow: opx 20px 30px -6px var(--RGBA);
+
+}
+.btn-desencriptar:active{
+    box-shadow: inset 2px 2px 4px var(--navy),
+    inset -3px -5px 9px var(--blue);
+    color: var(--navy);
+}
+.tarjeta{
+    width: 270px;
+    height: 500px;
+    position: relative;
+    background: var(--font);
+    box-shadow: 10px 24px 32px -8px var(--Darksalmon);
+    margin-top: 40px;
+    border-radius: 32px;
+    text-align: center;
+
+}
+.tarjeta-contenedor{
+    width: 250px;
+    margin: auto;
+    margin-top: 50%;
+   
+}
+.img-muñeco{
+    background: var(--font);
+   
+}
+.texto-uno{
+    font-size: 1.125rem;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    color: var(--blak);
+    background: var(--font);
+}
+.texto-dos{
+font-style: normal;
+font-weight: 400;
+font-size:0.75rem ;
+line-height: 150%;
+text-align: center;
+color: var(--gray);
+background: var(--white);
+}
+.evaluar{
+    width: 100%;
+    height: 485px;
+    position: absolute;
+    padding: 20px; 
+    top: 0;
+    left: 0;
+    font-weight: 400;
+    font-size:1.5rem ;
+    line-height: 36px;
+    color: var(--mediumgrey);
+    background: transparent;
+    border-top-right-radius: 32px;
+    border-top-left-radius: 32px;
+    border: none;
+    resize: none;
+   
+   
+    
+}
+}
+    
+
